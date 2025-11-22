@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="brand">
+                <span class="logo-icon">🧠</span>
+                <h1>Study Buddy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard" class="nav-link active" data-link>Dashboard</a></li>
+                <li><a href="#subjects" class="nav-link" data-link>Subjects</a></li>
+                <li><a href="#flashcards" class="nav-link" data-link>Flashcards</a></li>
+                <li><a href="#pomodoro" class="nav-link" data-link>Focus Timer</a></li>
+                <li><a href="#analytics" class="nav-link" data-link>Analytics</a></li>
+                <li><a href="#timetable" class="nav-link" data-link>Timetable</a></li>
+                <li><a href="#countdowns" class="nav-link" data-link>Countdowns</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn">🌙 Dark Mode</button>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2 id="page-title">Dashboard</h2>
+                <div class="user-profile">
+                    <span id="greeting">Hello, Student!</span>
+                    <div class="avatar">S</div>
+                </div>
+            </header>
+
+            <div id="app-view" class="view-container">
+                <!-- Dynamic Content Loaded Here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts (Order Matters) -->
+    <script src="js/modules/utils.js"></script>
+    <script src="js/modules/store.js"></script>
+    <script src="js/modules/router.js"></script>
+    <script src="js/views/dashboard.js"></script>
+    <script src="js/views/subjects.js"></script>
+    <script src="js/views/timetable.js"></script>
+    <script src="js/views/flashcards.js"></script>
+    <script src="js/views/pomodoro.js"></script>
+    <script src="js/views/analytics.js"></script>
+    <script src="js/views/countdowns.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
